@@ -1,0 +1,28 @@
+### Testando a criação de uma nova tarefa
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "Nova Tarefa 3",
+  "description": "Descrição da tarefa 3",
+  "status": "pending"
+}
+
+### Testando a listagem de todas as tarefas
+GET http://localhost:3000/tasks
+
+### Testando a busca por uma tarefa específica
+GET http://localhost:3000/tasks/1
+
+### Testando a atualização de uma tarefa
+PUT http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Tarefa Atualizada",
+  "description": "Descrição atualizada",
+  "status": "completed"
+}
+
+### Testando a remoção de uma tarefa
+DELETE http://localhost:3000/tasks/1
